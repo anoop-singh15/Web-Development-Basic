@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h3>HTML Forms Basic</h3>
+    <!-- form starting-->
+    <form action="backend.php">
+        <!-- br tag line break is avoided-->
+        <div>
+            <!-- label to highlight  field-->
+            <label for="name">Name</label>
+            <!-- input tag to take input-->
+            <input type="text" id="name" name="myName">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            <label for="role">Role</label>
+            <input type="text" id="role" name="myRole">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" id="bonus" name="myBonus">
+        </div>
+        <br>
+        <div>
+            <!--checked for default check -->
+            <label for="elig">Are you eligible?</label>
+            <input type="checkbox" id="elig" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            <!-- Radio tag multiple checkbox-->
+            <label for="gender">Gender: Male</label>
+            <input type="radio" id="gender" name="myGender"> Female
+            <input type="radio" id="gender" name="myGender">
+            Other
+            <input type="radio" id="gender" name="myGender">
+        </div>
+        <br>
+        <div>
+            <label for="write">Write about Yourself:</label><br>
+            <textarea name="myText" id="write" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- select and option tag drop down options selected for default-->
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="Ind">Indica</option>
+                <option value="Swf">Swift</option>
+                <option value="ferr" selected>Ferrari</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- Submit and Reset tag -->
+            <label for="Submit"></label>
+            <input type="submit" id="submit" name="mySubmit" value="Submit Now">
+
+            <label for="reset"></label>
+            <input type="reset" id="reset" name="myReset" value="Reset Now">
+
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>
