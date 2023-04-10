@@ -1,0 +1,14 @@
+p{
+    font-family: 'Peddana', serif;
+    font-size: 24px; /*1/96 of an  inch*/
+    line-height: 1.2em;
+}
+
+h4{
+    font-family: cursive;
+    font-size:20px ;
+}
+
+span{
+    font-weight: bold;
+}

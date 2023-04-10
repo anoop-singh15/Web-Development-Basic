@@ -1,0 +1,53 @@
+h4 {
+    font-family: cursive;
+    font-size: 22px;
+}
+
+#firstpara {
+    font-family: 'Peddana', serif;
+    color: rgb(251, 255, 0);
+    background-color: rgb(8, 177, 84);
+    height: 80px;
+    width: 304px;
+    font-size: 24px;
+    border: 4px solid rgb(102, 255, 1);
+    border-radius: 11px;
+    /* border-color: rgb(102, 255, 1);
+    border-style: solid;
+    border-width: 4px; */
+
+}
+
+#secondpara {
+    font-family: 'Peddana', serif;
+    color: rgb(204, 0, 255);
+    background-color: rgb(177, 8, 16);
+    height: 80px;
+    width: 304px;
+    font-size: 24px;
+    /* border:4px solid rgb(102, 255, 1) ; */
+    border-right: 5px solid violet;
+    border-left: 5px solid rgb(15, 236, 45);
+    border-top: 5px solid rgb(204, 22, 204);
+    border-bottom: 5px solid rgb(97, 167, 17);
+    /* border-radius: 11px; */
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+#thirdpara {
+    font-family: 'Peddana', serif;
+    height: 706px;
+    width: 1268px;
+    font-size: 34px;
+    color: cadetblue;
+    background-image: url('https://images.hdqwalls.com/download/sung-jin-woo-solo-leveling-8y-1336x768.jpg');
+    border-radius: 6px;
+    border: 4px solid red;
+    background-repeat: no-repeat;/*repeat-x and repeat-y will make it repeat on x and y axis*/
+    /* background-position: 92px 2px; */
+    /* background-position: center left; */
+    background-position: top left;
+
+}
