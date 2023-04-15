@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #bb7d7d;
+    border-radius: 30px;
+}
+
+.navbar ul {
+    /* to bring overflow background-color */
+    overflow: auto;
+    padding: -3px 12px;
+    margin: 12px 12px;
+}
+.navbar li {
+    float: left;
+    list-style: none;
+    font-size: 23px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-style: italic;
+    padding: 13px 3px;
+    margin: 4px 2px;
+}
+
+
+.navbar li a {
+    padding: 13px 30px;
+    margin: 4px 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a:hover{
+   color: #f7f3f3;
+}
+
+.navbar input {
+    border: 2px solid #bb7d7d;
+    border-radius: 30px;
+    padding: 8px 25px;
+    margin: 0px 1px;
+    width: 186px
+}
+
+.search {
+    float: right;
+    padding: 12px 75px;
+
+}
