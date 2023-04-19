@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid peru;
+    background-color: rgb(233, 185, 96);
+    height: 10000px;
+}
+
+.box{
+    border: 2px solid red;
+    font:30px;
+    margin: 2px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+#box3{
+    /* Position-- static(default),Absolute,relative,fixed ,sticky */
+    /* position relative == relative to normal position*/
+    /* position: relative; */
+
+    /* Absolute position = absolute to parent position  */
+    /* position: absolute;
+    top: 34px;
+    left: 20px; */
+
+    /* fixed =position relative to browser window*/
+    /* position: fixed;
+    right: 4px;
+    bottom: 0px; */
+
+    position: sticky;
+    top: 3px;
+
+
+}
+
+#box4{
+      position: fixed;
+    right: 4px;
+    bottom: 0px; 
+
+}
