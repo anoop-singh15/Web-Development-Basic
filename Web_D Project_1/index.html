@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- how to place navigation menu on background image --> <!--check-->
+    <!-- how to set image --> <!--check-->
+    <!-- how to put logo on navigation menu -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Wit</title>
+    <link rel="stylesheet" href=".\CSS\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <ul>
+                    <li><a href="#" id="started">Get Started</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li id="logo"><a href="#">fitness <span>hub</span> </a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <form action="backend.php">
+        <div id="formtext"> join now</div>
+
+        <div class="input">
+            <!-- input tag to take input-->
+            <input class="input-input" type="text" id="name" name="myName" placeholder="NAME">
+        </div>
+        <div class="input">
+            <!-- input tag to take input-->
+            <input class="input-input" type="text" id="email" name="myEmail" placeholder="EMAIL">
+        </div>
+        <div class="input">
+            <!-- input tag to take input-->
+            <input class="input-input" type="number" id="age" name="myAge" placeholder="AGE">
+        </div>
+        <div class="input">
+
+            <input class="input-input" type="text" id="age" name="myAge" placeholder="Enter Your Gender">
+
+        </div>
+        <div class="input">
+            <!-- input tag to take input-->
+            <input class="input-input" type="text" id="location" name="myLocation" placeholder="Enter Your Locality">
+        </div>
+        <button class="button">SUBMIT</button>
+        <input class="button" type="reset" id="reset" name="myReset" value="Reset Now">
+    </form>
+
+
+</body>
+
+</html>
