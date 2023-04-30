@@ -1,0 +1,36 @@
+.box {
+    border: 2px solid;
+    height: 150px;
+    width: 190px;
+}
+
+#box1 {
+    position: relative;
+    top: 14px;
+    z-index: 100px;
+    background-color: burlywood;
+}
+
+#box2 {
+    /* Visibility:hidden --->reserve space,hide element and space
+    display:none ---> will hide the element and show its empty space*/
+
+    /* z-index -->works for positin relative,absolute,sticky ,fixed :not for default static*/
+/* 
+    visibility: hidden;
+    display: none; */
+
+    position: relative;
+    top: -1px;
+    z-index: -1;/*bigger value will come above*/
+
+    background-color: rgb(241, 142, 12);
+}
+
+#box3 {
+    background-color: rgb(36, 196, 89);
+}
+
+#box4 {
+    background-color: rgb(235, 61, 177);
+}
