@@ -1,0 +1,48 @@
+.box {
+    background-color: brown;
+    font-size: 45px;
+    color: antiquewhite;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+/* MEDIA TYPES screen,print ,only screen */
+@media only screen and (max-width:390px) {
+    #box1 {
+        display: block;
+        font-size: 80px;
+        background-color: #677927;
+        height: 200px;
+              
+    }
+
+    body {
+        background-color: rgb(241, 238, 238);
+    }
+}
+
+@media(max-width:820px) and (min-width:412px) {
+    #box2 {
+        display: block;
+        height: 200px;
+        background-color: cornflowerblue;
+    }
+}
+
+@media(max-width:1024px) and (min-width:820px) {
+    #box3 {
+        display: block;
+        height: 200px;
+        background-color: cyan;
+        color: black;
+    }
+}
+
+@media (min-width:1025px) {
+    #box4 {
+        display: block;
+        height: 200px;
+        background-color: rgb(255, 74, 29);
+        color: black;
+    }
+}
