@@ -1,0 +1,34 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    color: #FD1C03;
+    background-color: rgb(0,0,0,0.8);
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+    justify-content: center;
+    margin: auto 400px;
+}
+/* Changes properties of all 'p' inside div , all div's */
+div p{
+    background-color: green;
+}
+
+/* To change property of only 'p' inside li tag ----> if p is contained in li and li is contained  in div*/
+div li p{
+    background-color: purple;
+}
+
+/* To follow specific heirarchy --- DIRECT CHILD if p is right inside div*/
+div > p{
+    background-color: brown;
+}
+
+/* To apply CSS on tag whose previous tag is div -->if p is right after div
+p is next sibling of div */
+div + p{
+    color: rgb(206, 15, 47);
+    background-color: aqua;
+}
