@@ -9,6 +9,8 @@ input {
 
 .container {
     display: block;
+    /* position except static for zindex */
+    position:relative;
     width: 250px;
     margin: 34px auto;
     padding: 34px 34px;
