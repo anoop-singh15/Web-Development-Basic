@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+}
+
+input {
+    display: block;
+    margin: 34px 34px;
+}
+
+.container {
+    display: block;
+    width: 250px;
+    margin: 34px auto;
+    padding: 34px 34px;
+    z-index: 100px;
+    border: 2px solid white;
+    background-color: whitesmoke;
+}
+
+input[type=text] {
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin: 34px -10px;
+}
+
+a[target] {
+    font-size: 30px;
+    color: brown;
+    text-decoration: none;
+}
+
+a[target='_self'] {
+    color: rgba(196, 15, 15, 0.9);
+}
+
+input[type='email'] {
+    font-size: 20px;
+    margin: 34px -10px;
+    border: 2px solid black;
+    color: rgb(91, 7, 248);
+    border-radius: 10px;
+}
+
+/* For applying CSS to third child */
+li:nth-child(3)
+{
+    color: blueviolet;
+}
+/* For every 2nd element */
+li:nth-child(2n+0)
+{
+    color: rgb(235, 17, 126);
+}
+/* for every 3 element -->value inside nth-child becomes 0 nothing will happen */
+li:nth-child(3n+3)
+{
+    color: rgb(71, 7, 175);
+}
+/* odd nth child */
+li:nth-child(odd)
+{
+    /* colour code */
+    color: rgb(161, 12, 62);
+}
+/* even nth child */
+li:nth-child(even)
+{
+    color: rgb(72, 252, 2);
+}
