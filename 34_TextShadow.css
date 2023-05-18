@@ -1,0 +1,44 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    margin: 12px 12px ;
+    padding: 12px 12px;
+    background-color: burlywood;
+    border-radius: 10px;
+     
+            /* SYNTAX OF BOX SHADOW */
+    /*box-shadow:offset-x offset-y color; */
+    /*box-shadow:offset-x offset-y blur-radius color; */
+    /*box-shadow:offset-x offset-y blur-radius spread-radius color; */
+    
+    
+    /* box-shadow:10px 10px rgb(0,0,0,0.3); */
+    /* box-shadow:10px 10px 20px rgb(0,0,0,0.3); */
+    /* box-shadow:10px 10px 10px 1px rgb(0,0,0,0.3); */
+
+    /* box-shadow:-10px -10px rgb(0,0,0,0.3); */
+    /* box-shadow:-10px -10px 10px rgb(0,0,0,0.3); */
+    /* box-shadow:-10px -10px 10px 1px    rgb(0,0,0,0.3); */
+
+               /* INSIDE BOX SHADOW */
+    /* box-shadow:inset 10px 10px 10px 1px rgb(0,0,0,0.3); */
+    /* box-shadow:inset -10px -10px 10px 1px    rgb(0,0,0,0.3);  */
+                
+               /* MULTIPLE BOX SHADOW */
+                   /* COOL EFFECT */
+    box-shadow: 10px 10px 10px 1px rgb(0,0,0,0.3),10px 10px 10px 1px rgba(223, 13, 13, 0.3),10px 10px 10px 1px rgba(229, 7, 236, 0.3);
+}
+
+.card h3{
+    /* text-shadow:offset-x offset-y blur-radius color */
+    /* text-shadow: 3px 3px 1px rgb(255,255,255,0.5); */
+    text-shadow: -3px -3px 1px rgb(255,255,255,0.5);
+
+
+}
