@@ -1,0 +1,36 @@
+:root {
+    /* GLOBAL VARIABLE DECLARATION IS INSIDE (:root{here}) */
+    --primary-color: rgba(243, 11, 11, 0.5);
+    --secondary-color: burlywood;
+    --maxw:1000px;
+    --minh:400px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: var(--maxw);
+    min-height: var(--minh);
+    margin: auto;
+    background-color: var(--secondary-color);
+}
+
+.box {
+    /* LOCAL variable declaration =   --variable_name:value*/
+    /* --var1: burlywood;
+    --var2: rgb(202, 42, 69, 0.7); */
+
+    width: 200px;
+    height: 150px;
+    /* background-color: var(--var1); */
+    background-color: var(--primary-color);
+    margin: 12px 22px;
+    padding: 24px 24px;
+    border-radius: 10px;
+    /* border: 2px solid var(--var2); */
+    border: 2px solid var(--secondary-color);
+    /* box-shadow: 10px 10px 10px var(--var1), 10px 10px 10px var(--var2); */
+    box-shadow: 10px 10px 8px var( --primary-color), 10px 10px 10px var(--secondary-color);
+
+}
