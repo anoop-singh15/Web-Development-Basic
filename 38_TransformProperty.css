@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 99vh;
+    background-color: burlywood;
+}
+
+.box{
+    border: 3px solid rgb(228, 120, 138,0.9);
+    height: 350px;
+    width: 350px;
+    background-color:rgb(228, 120, 138,0.5) ;
+    box-shadow: 20px 20px 50px 2px rgba(6, 211, 91, 0.5);
+    /* transform: rotate(45deg); */
+    /* Transform with transition */
+    transition: transform 1s ease-in-out 0s;
+}
+
+.box:hover{
+    /* transform: rotate(360deg); */
+
+    /* To bend box */
+    /* transform: skew(36deg); */
+
+    /* to increase or decrease box size */
+    /* transform: scale(-1); */
+
+    /* transform: translateX(-400px); */
+    /* transform: translateX(120px); */
+    /* transform: translateY(-100px); */
+
+    /* translate shorthand */
+    transform: translateX(123px) translateY(-123px);
+
+
+}
