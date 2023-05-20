@@ -1,0 +1,66 @@
+:root {
+    --primary-color: rgba(4, 116, 243, 0.4);
+    --secondary-color: rgb(255, 0, 0, 0.7);
+}
+
+.container {
+    background-color: var(--secondary-color);
+
+}
+
+.box {
+    background-color: var(--primary-color);
+    width: 250px;
+    height: 190px;
+    position: relative;
+    animation-name: basic-2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* to property gets applied fill mode-forwards*/
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: alternate; */
+    /* animation-timing-function: ease-out; */
+    /* animation-delay: 2s; */
+    /* animation-direction: reverse; */
+    
+       /* animation shorthand */
+/* animation:animation-name animation-duration anmation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+    animation: basic-2 5s ease-in 1s 12  backwards;
+
+}
+
+@keyframes basic-1 {
+    from {
+        width: 250px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes basic-2{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 400px;
+        left: 0px;
+       
+    }
+    50%{
+        top: 400px;
+        left: 400px;
+
+    }
+    75%{
+        top: 0px;
+        left: 400px;
+
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
