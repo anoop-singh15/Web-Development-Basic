@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --color:rgba(0,0,0,0.9);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0, .6);
+            min-height: 100vh;
+
+        }
+
+        .container {
+            position: relative;
+            width: 350px;
+            height: 150px;
+            display: flex;
+            /* border: 2px solid rgb(252, 249, 249); */
+            /* border-radius: 20px; */
+            box-shadow: 20px 20px 50px 2px rgb(0, 0, 0, .5);
+            /* margin: 220px; */
+            /* to hide overflowing moving span  */
+            overflow: hidden;
+            text-transform: uppercase;
+            font-size: large;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            color: aliceblue;
+        }
+
+        /* TO make div container half colored   */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            bottom: 2px;
+            width: 50%;
+            background: rgb(0, 0, 0, .5);
+            /* border-radius: 20px; */
+            z-index: -1;
+        }
+
+/* SETTING 4 SPAN TAG TO THERE PLACE ON DIV */
+        .container span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, transparent,var(--color));
+            animation: basic1 2s linear infinite;
+            /* animation-delay: 1s; */
+        }
+
+        .container span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--color));
+            animation: basic2 2s linear infinite;
+            animation-delay: 1s;
+
+        }
+      
+        .container span:nth-child(3) {
+            position: absolute;
+            bottom:0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to left, transparent, var(--color));
+            animation: basic3 2s linear infinite;
+            /* animation-delay: 1s; */
+
+        }
+        .container span:nth-child(4) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to top, transparent, var(--color));
+            animation: basic4 2s linear infinite;
+            animation-delay: 1s;
+
+        }
+
+
+        /* ANIMATION TO ALL 4 SPAN */
+        @keyframes basic1 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes basic2 {
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+        }
+        @keyframes basic3 {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes basic4 {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        button
+    </div>
+</body>
+
+</html>
