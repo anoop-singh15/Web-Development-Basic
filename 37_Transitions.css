@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    text-align: center;
+    text-transform: capitalize;
+   color: white;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.box{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    transition-property:background-color;
+    transition-duration: 3s;
+    /* transition-timing-function:ease-in-out; */
+    transition-delay: 1s;
+
+
+    /* Shorthand transition */
+    /* transition:property duration timing-function delay */
+    /* transition: background-color 2s ease-out 1s;  */
+    
+    /* transition to all properties */
+    transition: all .1s ease-in 0s; 
+
+    
+}
+
+.box:hover{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 150px;
+    background-color: rgb(11, 77, 77);
+    font-size: 50px;
+    font-family: sans-serif;
+    opacity: 0.5;
+}
+
+
