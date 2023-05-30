@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
+    <link rel="stylesheet" media="screen and (max-width:1118px)" href=".\CSS\Phone.css">
     <link rel="stylesheet" href=".\CSS\style.css">
 </head>
-<!-- LOGO LEFT -->
+
+<!-- Footer Change and navbar Sticky -->
 
 <body>
     <header>
         <nav>
             <ul>
                 <li class="logo"></li>
-                <li>home</li>
+                <li><a href="#home">home</a></li>
                 <li>about</li>
-                <li>services</li>
-                <li>contact us</li>
+                <li><a href="#clients">services</a></li>
+                <li ><a href="#contactus">contact us</a></li>
             </ul>
         </nav>
         <div class="bheader">
-            <h1> welcome to our shop</h1>
+            <h1 id="head"> welcome to our shop</h1>
             <button id="btn1">order now </button>
         </div>
     </header>
@@ -44,20 +46,25 @@
             aut ex nulla a non ab, dignissimos dolorum magni ipsam modi.
         </div>
         <footer>
-            <div class="clients">
-            </div>
-            <div class="contact">
-                <div class="input">
-                    Contact us
-                    <input type="text" placeholder="NAME" class="in-input">
-                    <input type="email" placeholder="email" class="in-input">
-                    <input type="number" placeholder="Contact Number" class="in-input">
-                    <input type="submit" class="in-input">
-                    <input type="reset" placeholder="reset" class="in-input">
+            <section id="client">
+                <div class="clients">
+                </div>
+            </section>
+            <section id="contactus">
+                <div class="contact">
+                    <div class="input">
+                        Contact us
+                        <input type="text" placeholder="NAME" class="in-input">
+                        <input type="email" placeholder="email" class="in-input">
+                        <input type="number" placeholder="Contact Number" class="in-input">
+                        <input type="submit" class="in-input">
+                        <input type="reset" placeholder="reset" class="in-input">
+
+                    </div>
 
                 </div>
+            </section>
 
-            </div>
         </footer>
     </div>
 

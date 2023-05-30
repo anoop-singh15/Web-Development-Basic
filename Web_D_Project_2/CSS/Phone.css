@@ -1,0 +1,23 @@
+#head {
+    padding: 20px 20px;
+    font-size: 2rem;
+}
+
+nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    flex-direction: column;
+
+}
+
+header div {
+    top: 220px;
+    margin: 0px auto;
+    height: 200px;
+    
+   
+}
