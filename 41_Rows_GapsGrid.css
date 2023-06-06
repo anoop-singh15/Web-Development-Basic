@@ -1,0 +1,19 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    /* to charnge all rows */
+    grid-auto-rows: 3fr;
+    /* grid-template-columns: 1fr 4fr 2fr; */
+    grid-template-columns: repeat(4,2fr);
+    grid-gap: 1rem;
+}
+
+.box{
+    background-color: thistle;
+    border: 2px solid rgb(206, 22, 206,.6);
+    /* margin: 2px; */
+}
