@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.425);
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+}
+
+.box {
+    background-color: rgba(135, 207, 235, 0.438);
+    border: 2px solid rgba(135, 207, 235, 8);
+    padding: 26px;
+}
+
+@media (min-width:100px)  {
+    .container :nth-child(1) {
+        background: url('https://images5.alphacoders.com/128/1288655.png')no-repeat center center/cover;
+        height: 300px;
+
+    }
+    .container :nth-child(2) {
+        background: url('https://wallpaperaccess.com/full/259549.jpg')no-repeat center center/cover;
+        height: 300px;
+
+    }
+    .container :nth-child(3) {
+        background: url('https://wallpaperaccess.com/full/3209465.jpg')no-repeat center center/cover;
+        height: 300px;
+
+    }
+}
+@media (max-width:500px)  {
+    .container :nth-child(2) {
+        background: url('https://images5.alphacoders.com/128/1288655.png')no-repeat center center/cover;
+        height: 300px;
+
+    }
+    .container :nth-child(3) {
+        background: url('https://wallpaperaccess.com/full/259549.jpg')no-repeat center center/cover;
+        height: 300px;
+
+    }
+    .container :nth-child(1) {
+        background: url('https://wallpaperaccess.com/full/259549.jpg')no-repeat center center/cover;
+        height: 300px;
+
+    }
+}
