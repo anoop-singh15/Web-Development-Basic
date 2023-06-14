@@ -67,14 +67,14 @@ function max_min(num1,num2)
     }   
     else
     {
-        return (num2+ " greater than "+num1);
+        return (num1+ " smaller than "+num2);
     }
 
 }
 
 let max1=max(10,6);
 let min1=min(10,6);
-let new1=max_min(5,5);
+let new1=max_min(20,10);
 console.log(max1);
 console.log(min1);
 console.log(new1);
