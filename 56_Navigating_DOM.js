@@ -28,4 +28,4 @@ console.log(selector3);
 // Query selector all
 
 let selector4=document.querySelectorAll('#nav>li');
-console.log(selector4[2].innerHTML="<li>new text</li>   ");
+console.log(selector4[2].innerHTML="<li>new text</li>");
