@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Html in PUG Basics</title> -->
+    <title>#{title}</title>
+    style
+       include ../static/style.css
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Services</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- |<h3>HTML INSIDE PUG</h3>
+        |<h3>Text inside html passed as parameter through js</h3>
+        <p>#{content}</p> -->
+        <h3>Get Gym Membership Now!</h3>
+        <form action="/" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="number" name="age" id="age" placeholder="Age">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <select name="gender" id="gender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">other</option>
+            </select>
+            <textarea name="address" id="add" cols="40" rows="5" placeholder="Address"></textarea>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

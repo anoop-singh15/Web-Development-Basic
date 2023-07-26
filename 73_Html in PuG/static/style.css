@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    color: var(--textcolor1);
+}
+
+:root {
+    --textcolor1: rgba(255, 255, 255);
+    --textcolor2: rgba(190, 31, 143, 0.5);
+    --fontpoppins: font-family: 'Poppins', sans-serif;
+    --bgcolor_nav: rgba(0, 0, 0, 0.5);
+    --hovercolor: rgba(248, 13, 64, 0.658);
+    --bgWallpaper: url('../static/bg2.jpg') no-repeat center center/cover;
+    --cardborder: 1px solid rgba(255, 255, 255, .8);
+    --box_shadow: 0 4px 30px solid rgba(0, 0, 0, .1);
+}
+
+/* Navigation menu */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--bgcolor_nav);
+}
+
+li {
+    padding: 0px 20px;
+    list-style: none;
+    margin: 10px 2px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--textcolor1);
+    font-weight: 550;
+    font-style: italic;
+    font-family: var(--fontpoppins);
+    letter-spacing: 1.6px;
+}
+
+a:hover {
+    color: var(--hovercolor);
+}
+
+/* Background Image */
+body::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background: var(--bgWallpaper);
+    overflow: hidden;
+    z-index: -1;
+    opacity: .8;
+}
+
+/* Form Container */
+.container {
+    width: 480px;
+    height: 460px;
+    /* border: 2px solid red; */
+    margin: 25px auto;
+    text-align: center;
+    border: var(--cardborder);
+    border-radius: 16px;
+    box-shadow: var(--box_shadow);
+    backdrop-filter: blur(3px);
+
+}
+
+.container h3 {
+    padding: 10px 2px;
+    color: rgba(0, 0, 0, .5);
+    text-transform: capitalize;
+    font-size: 2.1rem;
+
+}
+/* Form */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    padding: 12px 10px;
+    margin: 5px 0px;
+
+}
+
+/* Form Input Fields */
+input {
+    
+    background-color: rgba(0, 0, 0, .1);
+    font-size: 16px;
+    padding: 7px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+   
+    border: var(--cardborder);
+
+}
+
+select {
+    background-color: rgba(0, 0, 0, .1);
+    font-size: 16px;
+    padding: 7px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+  
+    border: var(--cardborder);
+
+}
+
+#add {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 7px 0px;
+    margin: 15px 0px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+    align-content: center;
+  
+    border: var(--cardborder);
+}
+
+.btn{
+    color: var(--textcolor1);
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
+    border: var(--cardborder);
+    cursor: pointer;
+    
+}
+
+/* Navigation responsive */
+@media (max-width:200px) {
+    nav ul {
+        width: fit-content;
+    }
+}
