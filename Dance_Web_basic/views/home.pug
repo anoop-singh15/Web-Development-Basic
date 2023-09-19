@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts 
+    script(src='../static/index.js')
+block style 
+     style 
+            include ../static/style.css
+block content
+        //-nav html here
+                //- Smart way to give anchor tag write this below ul or one liner
+                //- li #[a(heref="/") Home]
+                //- li #[a(heref="/") About]
+                //- li #[a(heref="/") Contact Us]
+                //- li #[a(heref="/") Services]
+        section#intro 
+            h3 Welcome to dance academy
+            p Don’t practice until you get it right. Practice until you can’t get it wrong
+        section#mission 
+            h3#missionh our mission
+            div.card
+                h4 card1
+                div.card_img
+                    img.cimg#c1(src="../static/1.png", alt="Error")
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione beatae odit adipisci magni, at eaque corrupti magnam consectetur quibusdam quidem architecto rerum, ad atque iusto, nesciunt aliquam nam ea? Distinctio!
+            div.card
+                h4 card2
+                div.card_img
+                    img.cimg(src="../static/2.jpg", alt="Error")
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione beatae odit adipisci magni, at eaque corrupti magnam consectetur quibusdam quidem architecto rerum, ad atque iusto, nesciunt aliquam nam ea? Distinctio!
+            div.card
+                h4 card3
+                div.card_img
+                    img.cimg(src="../static/3.png", alt="Error")
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione beatae odit adipisci magni, at eaque corrupti magnam consectetur quibusdam quidem architecto rerum, ad atque iusto, nesciunt aliquam nam ea? Distinctio!
+        section#sponsor 
+            h3 our sponsor
+            div.sponors
+                img.simg(src="../static/5.png", alt="Error")
+                img.simg(src="../static/4.jpg", alt="Error")
+                img.simg(src="../static/6.jpg", alt="Error")
+                img.simg(src="../static/7.png", alt="Error")
+        

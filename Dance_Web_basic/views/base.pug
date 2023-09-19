@@ -1,0 +1,27 @@
+//- Template Inheritance concept
+doctype html
+html 
+    head 
+        title PUG beginner friendly
+        block scripts 
+        block style
+    body 
+        nav 
+            ul#navbar
+                div#logo
+                    img#logoimg(src="../static/logo.jpg", alt="Error Loading")
+                    span DA
+                li.navli 
+                    a(href="/") Home
+                li.navli 
+                    a(href="/") About
+                li.navli 
+                    a(href="/contact") Contact Us
+                li.navli 
+                    a(href="/") Services  
+        block content 
+              
+        footer#footer
+            |Copyright © by Dance Academy || All Rights Reseversd  
+        script 
+            include ../static/script.js                           
