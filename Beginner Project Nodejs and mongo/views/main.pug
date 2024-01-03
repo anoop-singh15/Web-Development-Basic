@@ -1,0 +1,22 @@
+block scripts 
+    
+block style
+    style 
+        include ../static/style/main.css
+block content 
+    section
+        div#box
+            h3 Enter Required field to post Code
+            form(action="/main" ,method="POST" ,class="_form")
+                span #question
+                textarea(type="text",name="question", cols="80",rows="4",overflow-y='scroll',Required)       
+                span #code Snippet
+                textarea(name="User_snippet", cols="80", rows="4",overflow-y='scroll',Required) 
+                input(type="text", name="complexity",placeholder="Enter complexity",Required)
+               
+               
+                button(type="submit") Submit
+                button(type="reset") Reset    
+            a(href="/list") view list 
+   
+        

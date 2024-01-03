@@ -1,0 +1,22 @@
+block scripts  
+block style
+  style 
+    include ../static/style/list.css
+block content 
+    h3 list items
+    div#grid
+        table 
+            thead 
+              tr
+                th Question 
+                th Complexity 
+                th Solution    
+            tbody 
+                each val in params
+                 tr 
+                  td #{val.question}      
+                  td #{val.complexity}
+                  td 
+                    pre. 
+                      #{val.User_snippet}  
+                        

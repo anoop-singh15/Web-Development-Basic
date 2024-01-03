@@ -1,0 +1,126 @@
+textarea::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 204, 228, 0.918);
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 2px solid rgb(21, 176, 223);
+    /* creates padding around scroll thumb */
+}
+
+body {
+    background-color: rgb(187, 228, 241);
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+    
+
+}
+
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+span{
+    text-transform: capitalize;
+    color:rgba(221, 15, 94, 0.795) ;
+    
+}
+
+
+#box {
+    border: 2px solid white;
+    max-width: 80%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 20px 20px 1px 10px rgb(165, 217, 236),
+        20px 20px 1px 1px rgb(158, 211, 228),
+        20px 20px 1px 1px rgb(158, 206, 221);
+    justify-content:start;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: auto;
+
+}
+
+
+
+h3 {
+
+    padding-bottom: 15px;
+    font-size: 2rem;
+    color: rgb(21, 176, 223);
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
+textarea {
+    margin: 10px 12px;
+    background-color: rgba(26, 15, 26, 0.795);
+    display: block;
+    text-align:left;
+    color: white;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(165, 217, 236) white;
+}
+
+button{
+    margin: 10 70px;
+    display: inline-block;
+    background-color: rgb(50, 178, 224);
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    
+}
+
+
+input{
+    display: block;
+    width: 97%;
+    height:30px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-style: italic;
+    text-transform:capitalize;
+    color: rgb(255, 0, 76);
+    text-align: center;
+    margin: 22px 10px;
+    margin-top: 25px;
+    border: 2px solid rgba(26, 15, 26, 0.795);
+}
+
+
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 20px;
+    color:rgba(211, 78, 16, 0.795);
+}
